@@ -25,7 +25,7 @@ This is a graphical implementation of the classic Battleship game using Python a
 
 2. Run the main script:
    ```bash
-   python main_interface.py
+   python main.py
    ```
 
 ## Project Structure
