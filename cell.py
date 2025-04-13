@@ -3,7 +3,7 @@ class Cell(object):
     # Constructor
     def __init__(self):
         self.state = "hidden"  # Attribute that indicates the state of the cell (hidden or discovered)
-        self.content = "O"  # Attribute that indicates the content of the cell (O -> hidden, 🚢 -> ship, B -> water)
+        self.content = "?"  # Attribute that indicates the content of the cell (? -> hidden, 🚢 -> ship, empty -> water)
 
     # Setters and Getters
     def set_state(self, state):
@@ -33,9 +33,9 @@ class Cell(object):
             else:
                 winner = False
         else:
-            self.content = "B"
+            self.content = "empty"
             self.state = "discovered"
-            result = "B"
+            result = "empty"
             ship_type = None
             winner = False
 

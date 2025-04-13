@@ -38,14 +38,14 @@ class Board(object):
             print(f"{count} | ", end="")
             for column in row:
                 if column.state == "hidden":
-                    print("O ", end="")
+                    print("? ", end="")
                 else:
                     if column.content == "🚢":
                         print("🚢 ", end="")
-                    elif column.content == "B":
-                        print("B ", end="")
+                    elif column.content == "empty":
+                        print("empty ", end="")
                     else:
-                        print("O ", end="")
+                        print("? ", end="")
             count += 1
             print()
         print("=======================")

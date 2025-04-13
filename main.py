@@ -61,7 +61,7 @@ class Interface:
             for column in range(10):
                 cell = board.board[row][column]
                 if cell.state == "hidden":
-                    button_text = "O"
+                    button_text = "?"
                     button_state = "normal"
                     color = "white"
                 elif cell.content == "🚢":
